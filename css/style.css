@@ -1,0 +1,49 @@
+div#main {
+	margin: 50px auto 0;
+	width: 400px;
+	height: 460px;
+	background-color: #eeeeee;
+	padding: 30px;
+}
+
+canvas#bg {
+	position: absolute;
+	width: 340px;
+	height: 340px;
+	z-index: 0;
+}
+
+div#buttonSet {
+	position: relative;
+}
+
+div#gameCanvas {
+	position: absolute;
+	z-index: 1;
+}
+
+div#alertBox {
+	position: absolute;
+	z-index: 2;
+	margin: 50px auto 0;
+	width: 340px;
+}
+
+.pieceStyle {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	-webkit-transition:all .5s cubic-bezier(.73,0,.34,1);
+	transition:all .5s cubic-bezier(.73,0,.34,1);
+}
+
+a {
+	text-decoration: none;
+	outline: "";
+}
+
+a.pieceStyle:focus {
+	-webkit-transform: scale3d(1.3,1.3,1);
+	transform: scale3d(1.3,1.3,1);	
+}
